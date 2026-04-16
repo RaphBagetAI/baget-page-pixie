@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page & Pixie | Grand Opening Soon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset and base styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #FFFFFF;
+      color: #000000;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 24px;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Typography for headings from Bebas Neue and Roboto for body */
+    h1, h2, h3 {
+      font-family: 'Bebas Neue', cursive, sans-serif;
+      text-transform: uppercase;
+      font-weight: normal;
+      letter-spacing: 0.1em;
+      color: #000;
+    }
+    h1 {
+      font-size: 3.5rem;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+
+    /* Layout grid container */
+    .container {
+      max-width: 720px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 48px;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 40px 20px 40px 20px;
+      border-bottom: 1px solid #F2F2F2;
+    }
+    .hero p {
+      font-weight: 300;
+      font-size: 1.25rem;
+      color: #000;
+      max-width: 520px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 12px;
+      letter-spacing: 0.02em;
+    }
+
+    /* Accent underline below h1 for subtle emphasis */
+    .underline {
+      display: inline-block;
+      border-bottom: 3px solid #E63946;
+      padding-bottom: 6px;
+      margin-bottom: 12px;
+    }
+
+    /* Value Proposition Section */
+    .value-prop {
+      background: #F2F2F2;
+      padding: 32px 20px;
+      border-left: 6px solid #E63946;
+      font-weight: 300;
+      font-size: 1.1rem;
+      line-height: 1.4;
+      color: #000;
+    }
+
+    /* Coming Soon Events Preview Section */
+    .events {
+      padding: 24px 20px;
+      border-bottom: 1px solid #F2F2F2;
+    }
+    .events h2 {
+      margin-bottom: 16px;
+    }
+    .event-list {
+      list-style: none;
+      padding-left: 0;
+      color: #2C3333;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.3;
+      border-left: 3px solid #E63946;
+      padding-left: 12px;
+    }
+    .event-list li {
+      padding: 8px 0;
+    }
+
+    /* Email capture Form Section */
+    .form-section {
+      padding: 32px 20px;
+      text-align: center;
+    }
+    label {
+      display: block;
+      font-weight: 700;
+      font-size: 0.9rem;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #000;
+    }
+    input[type="text"], input[type="email"] {
+      width: 100%;
+      max-width: 360px;
+      padding: 12px 14px;
+      border: 1px solid #ccc;
+      border-radius: 0;
+      font-size: 1rem;
+      margin-bottom: 20px;
+      font-family: 'Roboto', sans-serif;
+    }
+    button {
+      background-color: #E63946;
+      color: #FFF;
+      border: none;
+      padding: 14px 28px;
+      font-size: 1rem;
+      font-family: 'Bebas Neue', cursive, sans-serif;
+      letter-spacing: 0.12em;
+      cursor: pointer;
+      transition: background-color 0.25s ease-in-out;
+    }
+    button:hover, button:focus {
+      background-color: #b92a36;
+      outline: none;
+    }
+
+    /* Feedback messages */
+    .form-message {
+      font-weight: 400;
+      font-size: 1rem;
+      margin-top: 12px;
+      color: #4A5D4E;
+    }
+
+    /* Responsive: mobile first, scale up */
+    @media (min-width: 600px) {
+      .hero h1 {
+        font-size: 4.5rem;
+      }
+      .form-section {
+        padding: 48px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main">
+    <!-- Hero Section -->
+    <section class="hero" aria-label="Welcome and Grand Opening Announcement">
+      <h1 class="underline">Page & Pixie</h1>
+      <p>Swap Screen Time for Story Time Magic. Join Austin’s newest children’s book club storefront with theatrical reading nights and immersive author visits. A portal to another world, opening August 2026.</p>
+    </section>
+
+    <!-- Value Proposition -->
+    <section class="value-prop" aria-label="Why Page & Pixie Matters to Parents">
+      <p>In a world full of endless screens, Page & Pixie offers families a magical escape: thoughtfully curated themed reading nights that nurture bravery, empathy, and wonder through books and hands-on social-emotional experiences for kids ages 3 to 10.</p>
+    </section>
+
+    <!-- Coming Soon Events Preview -->
+    <section class="events" aria-label="Upcoming Page & Pixie Events Preview">
+      <h2>Coming Soon: Themed Reading Nights & Author Visits</h2>
+      <ul class="event-list">
+        <li><strong>Symphony of Stories Launch Week</strong>: August 22-28, 2026 – Interactive soundscape storytime with local author guest</li>
+        <li><strong>Pixie Chat with Briony Stewart</strong>: Virtual illustrator Q&A aligned with the Symphony theme</li>
+        <li><strong>Nuts for Nature Night</strong>: July 2026 – Outdoor reading circle with nature crafts for ages 4-7</li>
+      </ul>
+    </section>
+
+    <!-- Email Capture Form -->
+    <section class="form-section" aria-label="Join the Waitlist for Page & Pixie">
+      <h2>Become a Founding Member</h2>
+      <form id="waitlist-form">
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" name="FirstName" placeholder="Your first name" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="Email" placeholder="you@example.com" required />
+
+        <button type="submit">Secure Your Key</button>
+      </form>
+      <p id="form-message" class="form-message" role="alert" aria-live="polite"></p>
+    </section>
+
+  </main>
+
+  <script>
+    const form = document.getElementById('waitlist-form');
+    const messageEl = document.getElementById('form-message');
+    const apiUrl = 'https://app.baget.ai/api/public/databases/85119ee4-c09d-42d4-8e70-2633f902c58e/rows';
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      messageEl.textContent = '';
+
+      const formData = new FormData(form);
+      const data = {
+        data: {
+          Email: formData.get('Email'),
+          FirstName: formData.get('FirstName'),
+        },
+      };
+
+      try {
+        const response = await fetch(apiUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+        });
+
+        if (response.ok) {
+          form.reset();
+          messageEl.textContent = 'Thanks — we will be in touch soon!';
+          messageEl.style.color = '#4A5D4E';
+        } else {
+          const errorData = await response.json();
+          messageEl.textContent = errorData.message || 'Submission failed. Please try again.';
+          messageEl.style.color = '#E63946';
+        }
+      } catch (error) {
+        messageEl.textContent = 'Network error. Please try again later.';
+        messageEl.style.color = '#E63946';
+      }
+    });
+  </script>
+</body>
+</html>
